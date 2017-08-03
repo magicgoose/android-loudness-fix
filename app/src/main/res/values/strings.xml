@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Loudness fix</string>
+    <string name="intro">This app will add `audio.safemedia.bypass=true` to `/system/build.prop`. This is only possible to do under root. Use buttons at the bottom.\n\n</string>
+</resources>

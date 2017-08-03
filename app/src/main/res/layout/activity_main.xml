@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context="magicgoose.loudnessfix.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <TextView
+            android:id="@+id/log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/intro"
+            android:textColor="#000"
+            android:textSize="16sp"/>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button_check_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckRootClick"
+        android:padding="8dp"
+        android:text="Check for root"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText"/>
+
+    <Button
+        android:id="@+id/button_patch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:onClick="onPatchClick"
+        android:padding="8dp"
+        android:text="Apply patch"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText"/>
+
+</LinearLayout>
